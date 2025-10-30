@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title><%= title %></title>
     <link rel='stylesheet' href='/content/app.css' />
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
     <script src="/jquery/dist/jquery.min.js"></script>
-    <script src="/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %> page</p>
-    <script src='/script/app.js'></script>
-  </body>
+  <div id="wrapper">
+    <header>
+      <h1><%= title %></h1>
+      <script src='/script/app.js'></script>
+      <nav> <!-- Navigation bar -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutme">About Me</a></li>
+          <li><a href="/contact">Contact Me</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="welcome-box">  <!-- Initial Welcome Message With Picture background -->
+      <h2><mark>Welcome to My Portfolio</mark></h2>
+      <p><mark>Explore my work, learn more about me, and get in touch!</mark></p>
+    </div>
+    <article>
+      <h2>Welcome!</h2>
+      <p>This is my personal student portfolio website. Explore the links above to learn more about me, my projects, and how to get in touch.</p>
+    </article>
+  <article id="resume-box"> <!-- Additional Resume Section with Image -->
+    <h2>My Resume</h2>
+    <img src="/asset/images/Resume.png" alt="Baha Imran Resume" >
+    <p>You can view my resume above to learn more about my skills, experience, and education.</p>
+  </article>
+
+  
+    <footer> <!-- Footer with contact info -->
+      <p>Contact: Baha01ab@gmail.com | © 2025 Student Portfolio</p>
+    </footer>
+  </div>
+</body>
 </html>
