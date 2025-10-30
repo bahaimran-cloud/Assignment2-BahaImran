@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portfolio - <%= title %>
+    </title> <!-- CHANGE TITLE FOR EACH TOPIC LATER-->
+    <link rel='stylesheet' href='/content/app.css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>About Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutme">About Me</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article> <!-- Main Content -->
+            <h2>Introduction</h2>
+            <img src="Intro.jpg" alt="My Photo" width="250">
+            <p>Hello, my name is Baha Imran. I am a student currently studying at Ontario Tech University for the
+                Networking and IT Security program. I am passionate about technology, coding, and learning new skills.
+                Below is a video where you will find more information about me and my interests.</p>
+
+            <h2>My Video</h2> <!-- Embedded Video -->
+            <!--Video poster added but hidden due to autoplay-->
+            <video width="700" height="400" controls poster="Intro.jpg" preload="auto" autoplay muted loop>
+                <!-- Video with controls, autoplay and muted when website loads -->
+                <!-- Both MP4 and OGG formats and error handling -->
+                <source src="Video.mp4" type="video/mp4">
+                <source src="Video.ogv" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <!-- Button to play/pause the video with JavaScript -->
+            <button onclick="playPause()">Play or Pause the Video</button>
+            <script>
+                const video = document.querySelector('video');
+                function playPause() {
+                    if (video.paused) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+            </script>
+        </article>
+
+        <footer>
+            <p>Contact: Baha01ab@gmail.com | &copy; 2025 Student Portfolio</p>
+        </footer>
+    </div>
+</body>
+
+</html>
