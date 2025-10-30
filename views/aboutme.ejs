@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Student Portfolio - <%= title %>
-    </title> <!-- CHANGE TITLE FOR EACH TOPIC LATER-->
+    <title><%= title %></title>
     <link rel='stylesheet' href='/content/app.css' />
 </head>
 
@@ -16,7 +15,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/aboutme">About Me</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
                     <li><a href="/projects">Projects</a></li>
                 </ul>
             </nav>
@@ -24,7 +23,7 @@
 
         <article> <!-- Main Content -->
             <h2>Introduction</h2>
-            <img src="Intro.jpg" alt="My Photo" width="250">
+            <img src="/asset/images/Intro.jpg" alt="My Photo" width="250">
             <p>Hello, my name is Baha Imran. I am a student currently studying at Ontario Tech University for the
                 Networking and IT Security program. I am passionate about technology, coding, and learning new skills.
                 Below is a video where you will find more information about me and my interests.</p>
@@ -34,8 +33,8 @@
             <video width="700" height="400" controls poster="Intro.jpg" preload="auto" autoplay muted loop>
                 <!-- Video with controls, autoplay and muted when website loads -->
                 <!-- Both MP4 and OGG formats and error handling -->
-                <source src="Video.mp4" type="video/mp4">
-                <source src="Video.ogv" type="video/ogg">
+                <source src="/asset/videos/Video.mp4" type="video/mp4">
+                <source src="/asset/videos/Video.ogv" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
             <br>

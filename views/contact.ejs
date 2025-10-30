@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title><%= title %></title>
   <link rel='stylesheet' href='/content/app.css' />
 </head>
 <body>
+  <div id="wrapper">  <!-- Content visible in the browser's window is inside the wrapper -->
   <header>
+    <h1>Contact Me</h1>
     <nav>
-      <a href="/">Home</a>
-      <a href="/aboutme">About Me</a>
-      <a href="/contact">Contact</a>
+      <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/aboutme">About Me</a></li>
+      <li><a href="/contact">Contact Me</a></li>
+      <li><a href="/projects">Projects</a></li>
+      </ul>
     </nav>
   </header>
   
-  <main>
-    <h1><%= title %></h1>
-    <div class="contact-form">
-      <form>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
+  <article>
+      <h2>Get in Touch</h2>
+      <!-- Form to collect user input -->
+      <!-- The form uses mailto to send an email to the specified address with the subject Contact from Portfolio -->
+      <form action="mailto:baha01ab@gmail.com?subject=Contact_from_Portfolio"
+      enctype="text/plain" method="post" name="ContactForm"> 
+        <!-- Input fields for user details -->
+        <p><label>First Name: <input type="text" name="Firstname" required></label></p>
+        <p><label>Last Name: <input type="text" name="Lastname" required></label></p>
+        <p><label>Email: <input type="email" name="email" required></label></p>
+        <p><label>Cell No: <input type="tel" name="phone" pattern="[0-9]{10}" required></label></p>
+        <!-- Dropdown to select how the user found the portfolio -->
+        <p><label id="where">Where did you discover this portfolio</label>
+        <select name="where">
+            <option value="LinkedIn">LinkedIn Page</option>
+            <option value="Given">From a friend</option>
+            <option value="Resume">Resume</option>
+            <option value="GitHub">GitHub</option>
+            <option value="Other">Other</option>
+        </select></p>
+        <!-- Textarea for additional comments -->
+        <p><label>Comments: <textarea name="comments" rows="8"></textarea></label></p>
+        <!-- Submit executes email commands and Reset button clears the form -->
+        <p><input type="submit" value="Submit"></p>
+        <p><input type="reset" value="Reset"></p>
       </form>
-    </div>
-  </main>
+    </article>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>Contact: Baha01ab@gmail.com | &copy; 2025 Student Portfolio</p>
   </footer>
+  </div>
 </body>
 </html>
