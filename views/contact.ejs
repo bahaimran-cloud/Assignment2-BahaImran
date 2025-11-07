@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title><%= title %></title>
-  <link rel='stylesheet' href='/content/app.css' />
-  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <script src="/popper.js/dist/umd/popper.min.js"></script>
-  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-</head>
-<body>
+<%- include('partials/header') %>
   <div id="wrapper">  <!-- Content visible in the browser's window is inside the wrapper -->
   <header>
     <h1>Contact Me</h1>
@@ -45,9 +33,4 @@
       </form>
     </article>
 
-  <footer>
-    <p>Contact: Baha01ab@gmail.com | &copy; 2025 Student Portfolio</p>
-  </footer>
-  </div>
-</body>
-</html>
+  <%- include('partials/footer') %>

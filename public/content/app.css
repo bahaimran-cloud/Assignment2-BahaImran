@@ -49,32 +49,6 @@ mark { /* Hidden highlight for welcome box (To be used for mobile/tablet) */
   background-color: inherit;
 }
 
-nav { /* Navigation bar styles */
-  background-color: #046380;
-  text-align: center;
-  padding: 10px 0;
-  margin: 0 auto;
-  width: 100%;
-}
-
-nav ul { /* Navigation list styles */
-  padding: 0;
-  margin: 0;
-}
-
-nav li { /* Navigation list item styles */
-  display: inline-block; /* Discussed in slideshow 4 lecture */
-  /*Maintains the same list item size inside the nav bar ^^^*/
-  margin: 0 10px;
-}
-
-nav a { /* Navigation link styles */
-  color: #E6E2AF;
-  background-color: #046380;
-  padding: 10px 20px;
-  border-radius: 8px; /* Rounded corners */
-}
-
 nav a:hover { /* Hover effect for navigation links */
   color: #EFECCA;
   background-color: #002F2F;
@@ -133,8 +107,9 @@ button { /* Button styles for video play/pause */
 }
 
 video { /* Video styles for all videos (about me video)*/
-    width: 800px; 
-    padding: 15px; 
+    width: 50%; 
+    height: auto;
+    padding: 10px; 
     /*Maintains video in own seperate block*/
     display: block;
     margin-left: auto;
